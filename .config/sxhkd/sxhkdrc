@@ -1,0 +1,70 @@
+#Terminal emulator
+super + Return
+	kitty
+
+super + {_,shift + }Tab
+	bspc  node -f {next.local,prev.local}
+
+# Run program
+super + space
+	rofi -show drun
+
+# Close/kill window
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# Config
+super + {_,shift + }b
+	kitty -e vim ~/.config/{bspwm/bspwmrc,sxhkd/sxhkdrc}
+# TODO: Add reload config shortcut
+
+# Toggle fullscreen
+super + f
+	bspc node --state \~fullscreen
+
+super + r
+    kitty -e ranger
+
+# Polybar
+super + shift + p
+    	$HOME/.config/polybar/launch.sh
+
+super + y
+    polybar-msg cmd toggle
+
+# Xkill
+super + Escape
+    xkill
+
+super + shift + x
+	bspc quit
+
+
+#########################
+# BSPWM LAYOUT KEYS     #
+#########################
+
+# Focus desktop
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+
+# Focus/move window
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Move window to desktop
+super + shift + {1-9,0}
+	id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+
+# Resize window
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# {De,In}crease gap size
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# {De,A}ttach window from layout
+super + d
+	bspc node -t {floating,tiled}
+
