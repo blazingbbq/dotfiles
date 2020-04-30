@@ -33,6 +33,7 @@ call plug#end()
 silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 set directory^=~/.vim/tmp//
 
+set t_ut=
 set mouse=a
 set number
 set cursorline
