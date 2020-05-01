@@ -1,5 +1,5 @@
 * {
-    accent: @color12;  
+    accent: @color15;
 
     active-background: @accent;
     active-foreground: @foreground;
