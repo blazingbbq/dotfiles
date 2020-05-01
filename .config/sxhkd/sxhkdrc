@@ -16,7 +16,10 @@ super + {_,shift + }w
 # Config
 super + {_,shift + }b
 	kitty -e vim ~/.config/{bspwm/bspwmrc,sxhkd/sxhkdrc}
-# TODO: Add reload config shortcut
+
+# Reload config
+super + shift + p
+  sh $HOME/.config/bspwm/bspwmrc
 
 # Toggle fullscreen
 super + f
@@ -24,13 +27,6 @@ super + f
 
 super + r
     kitty -e ranger
-
-# Polybar
-super + shift + p
-    	$HOME/.config/polybar/launch.sh
-
-super + y
-    polybar-msg cmd toggle
 
 # Xkill
 super + Escape
