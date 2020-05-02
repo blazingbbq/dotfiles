@@ -14,6 +14,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add local bin to path
 export PATH="${PATH}:${HOME}/.local/bin"
 
+# Make vim the default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
