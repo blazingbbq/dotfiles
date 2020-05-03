@@ -24,11 +24,27 @@ Made for use with [kitty terminal themes](https://github.com/dexpota/kitty-theme
 - Shell: zsh
 - Top bar: [polybar](https://github.com/polybar/polybar)
 
-## Examples:
+## Gallery:
 
 ### Grape
 
 ![grape theme](images/dotfiles-grape.png)
+
+### FishTank
+
+![challenger deep theme](images/dotfiles-fishtank.png)
+
+### Argonaut
+
+![challenger deep theme](images/dotfiles-argonaut.png)
+
+### ChallengerDeep
+
+![challenger deep theme](images/dotfiles-challengerdeep.png)
+
+### Firewatch
+
+![challenger deep theme](images/dotfiles-firewatch.png)
 
 ### Spacedust
 
