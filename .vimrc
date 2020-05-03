@@ -82,6 +82,9 @@ nmap <leader>w :w<CR>
 
 cmap w!! w !sudo tee % > /dev/null
 
+" Make quit command case insensitive
+command Q q
+
 " Shift tab - deindent
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
