@@ -68,7 +68,7 @@ set smartcase
 set scrolloff=3
 set incsearch
 set history=1000
-set listchars=tab:→\ ,nbsp:␣,trail:·
+set list lcs=tab:→\ ,nbsp:␣,trail:·
 
 """ Key bindings
 " nmap <C-[> :tabprevious<CR>
